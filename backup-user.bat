@@ -12,7 +12,7 @@ echo Backup started at %DATE% %TIME% >> "%LOG%"
 echo ======================================== >> "%LOG%"
 
 :: === Start Robocopy ===
-robocopy "%SRC%" "%DST%" /E /Z /W:5 /R:5 /FFT /TEE /LOG+:"%LOG%" ^
+robocopy "%SRC%" "%DST%" /E /Z /W:1 /R:1 /FFT /TEE /LOG+:"%LOG%" ^
  /XD "AppData\Local" "AppData\LocalLow" "AppData\Temp" ^
      "AppData\Roaming\Microsoft\Windows\Recent" ^
      "AppData\Roaming\Microsoft\Windows\Themes\CachedFiles" ^
